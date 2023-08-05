@@ -5,7 +5,7 @@ html, body {
 }
 
 body {
-  font-family: Roboto, sans-serif;
+  font-family: Roboto, monospace;
   margin: 0;
   background: #aaa;
   color: #333;
@@ -20,6 +20,10 @@ body {
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  padding: 16px;
+  gap: 16px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .icon {
@@ -33,6 +37,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
 }
 
 .close-button {
@@ -50,10 +60,24 @@ body {
   padding: 0;
 }
 
+.header {
+  font-weight: bold;
+  font-size: larger;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.text {
+  margin-bottom: 16px;
+}
+
 button {
   cursor: pointer;
   padding: 8px 16px;
   border-radius: 8px;
+  width: 100px;
 }
 
 button.continue {
