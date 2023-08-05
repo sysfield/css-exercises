@@ -7,6 +7,18 @@ body {
   justify-content: space-between;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  font-size: 24px;
+}
+
 .header {
   height: 72px;
   background: darkmagenta;
@@ -20,18 +32,29 @@ body {
 
 .main {
   display: flex;
+  flex: 1;
+  align-items: stretch;
 }
 
 .sidebar {
   width: 300px;
   background: royalblue;
   box-sizing: border-box;
+  flex-shrink: 0;
+  padding: 16px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 32px;
 }
 
 .card {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+  flex-wrap: wrap;
 }
 
 .footer {
